@@ -1,0 +1,23 @@
+{
+  "backend/main.mo": "Motoko actor implementing a wallet and betting system with functions for wallet creation, deposits, withdrawals, placing bets, resolving bets, and querying balance and game history.",
+  "feature_evidence.json": "Feature evidence report mapping six implemented features (game selection, betting system, game mechanics, win/loss resolution, game history, and UI design) to their corresponding frontend files and test IDs.",
+  "frontend-file-summaries.txt": "JSON object containing one-line summaries of all frontend files including pages, components, hooks, and configuration files for the Humbo Bumbo gaming platform.",
+  "frontend/index.css": "Tailwind CSS configuration with custom CSS variables defining a vibrant gaming color system using OKLCH colors for both light and dark modes.",
+  "frontend/index.html": "HTML entry point with meta tags, favicon, title, and description for the Humbo Bumbo gaming platform.",
+  "frontend/src/App.tsx": "Main React application component setting up TanStack Router with routes for home, games, gameplay, history, and wallet pages wrapped in a Layout component.",
+  "frontend/src/components/BetPlacement.tsx": "Reusable bet placement component with amount input validation, quick bet buttons, balance checking, and error handling before confirming bets.",
+  "frontend/src/components/GameResult.tsx": "Game result display component showing win/loss outcome with animations, selected and lucky numbers, winnings/losses amount, and navigation options to play again or return to games.",
+  "frontend/src/components/Layout.tsx": "Main layout component with header, navigation (Home, Games, Wallet, History), mobile menu, and user authentication UI displaying balance and login/logout buttons.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and manages the backend actor instance based on Internet Identity authentication state, invalidating dependent queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "React context provider and hook for Internet Identity authentication, managing login/logout flow, identity state, and AuthClient lifecycle with configurable options.",
+  "frontend/src/hooks/useQueries.ts": "Collection of React Query hooks for backend operations including balance queries, wallet management (create/deposit/withdraw), bet placement/resolution, and game history retrieval.",
+  "frontend/src/index.css": "Global styles with Tailwind CSS configuration, custom CSS variables for light/dark theme colors (gaming-themed purple/cyan/green palette), and utility classes for gradients and glow effects.",
+  "frontend/src/main.tsx": "Application entry point that sets up React root with QueryClientProvider and InternetIdentityProvider wrappers around the main App component.",
+  "frontend/src/pages/GameHistory.tsx": "Game history page displaying user's past bets with statistics (total games, wins, losses, net profit) and a list of completed game entries, requiring authentication to view.",
+  "frontend/src/pages/GamePlay.tsx": "Game play page component that manages betting, number selection, and result display for individual games with state transitions between betting, playing, and result phases.",
+  "frontend/src/pages/GameSelection.tsx": "Game selection page displaying three available games (Lucky Number, Quick Pick, Lightning Round) with their details, requiring user authentication and sufficient balance to play.",
+  "frontend/src/pages/HomePage.tsx": "Landing page with hero section, feature cards highlighting platform benefits, and call-to-action buttons for login or starting gameplay.",
+  "frontend/src/pages/WalletPage.tsx": "Wallet management page allowing authenticated users to view balance, deposit funds, withdraw funds, and create a wallet if needed.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration defining custom theme with OKLCH color system, custom fonts (Poppins, Orbitron), glow effects, and gaming-themed animations.",
+  "project_state.json": "Project state tracking document listing implemented features for a gaming platform with betting system, wallet management, game mechanics, and vibrant UI design."
+}

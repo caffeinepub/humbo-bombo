@@ -1,0 +1,140 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-implement-a-game-selection-interface-showing-available-games-with-entry-fees-and-potential-winnings",
+      "featureTitle": "Implement a game selection interface showing available games with entry fees and potential winnings",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/GameSelection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-betting-system-where-users-can-place-bets-from-their-wallet-balance-before-starting-a-game",
+      "featureTitle": "Build a betting system where users can place bets from their wallet balance before starting a game",
+      "files": [
+        "frontend/src/components/BetPlacement.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-at-least-one-playable-game-mechanic-with-win-lose-conditions",
+      "featureTitle": "Create at least one playable game mechanic with win/lose conditions",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/GamePlay.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-win-loss-resolution-that-credits-winnings-to-user-wallet-on-victory-or-records-loss",
+      "featureTitle": "Implement win/loss resolution that credits winnings to user wallet on victory or records loss",
+      "files": [
+        "frontend/src/components/GameResult.tsx",
+        "frontend/src/pages/GamePlay.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-game-history-view-showing-past-games-played-with-bet-amounts-outcomes-and-winnings",
+      "featureTitle": "Build a game history view showing past games played with bet amounts, outcomes, and winnings",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/GameHistory.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-design-a-vibrant-exciting-gaming-interface-with-a-creative-visual-theme-featuring-energetic-colors-bold-typography-and-engaging-layouts-that-evoke-the-thrill-of-competitive-gaming-and-winning",
+      "featureTitle": "Design a vibrant, exciting gaming interface with a creative visual theme featuring energetic colors, bold typography, and engaging layouts that evoke the thrill of competitive gaming and winning",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Layout.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-render-generated-logo-and-game-background-images-as-static-assets-in-frontend-public-assets-generated",
+      "featureTitle": "Render generated logo and game background images as static assets in frontend/public/assets/generated",
+      "files": [
+        "frontend/index.html",
+        "frontend/src/components/Layout.tsx",
+        "frontend/src/pages/GamePlay.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "kind": "build_request",
+  "title": "Create Humbo Bumbo gaming platform with play-to-earn mechanics",
+  "projectName": "Humbo Bumbo",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a user wallet system that tracks user balance in the backend with deposit and withdrawal functionality",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Users have a persistent wallet balance stored in backend",
+        "Users can view their current balance",
+        "System supports deposit operations to add funds",
+        "System supports withdrawal operations to remove funds"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement a game selection interface showing available games with entry fees and potential winnings",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Display a list or grid of available games",
+        "Each game shows its entry fee amount",
+        "Each game shows potential winning amount",
+        "Users can select a game to play"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Build a betting system where users can place bets from their wallet balance before starting a game",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Users can select bet amount before game starts",
+        "Bet amount is deducted from user wallet balance",
+        "Users cannot bet more than their available balance",
+        "Bet is recorded in backend before game begins"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create at least one playable game mechanic with win/lose conditions",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Implement an interactive game that users can play",
+        "Game has clear win and lose conditions",
+        "Game outcome is determined by gameplay",
+        "Game completion triggers result processing"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Implement win/loss resolution that credits winnings to user wallet on victory or records loss",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Winning outcomes credit prize amount to user wallet",
+        "Losing outcomes are recorded without crediting funds",
+        "Game results are persisted in backend",
+        "Users can see updated balance after game completion"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Build a game history view showing past games played with bet amounts, outcomes, and winnings",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Display list of user's past games",
+        "Each entry shows game name, bet amount, outcome (win/loss), and amount won or lost",
+        "History is paginated or scrollable for many entries",
+        "History persists across sessions"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Design a vibrant, exciting gaming interface with a creative visual theme featuring energetic colors, bold typography, and engaging layouts that evoke the thrill of competitive gaming and winning",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Interface uses a cohesive color palette that is energetic and attention-grabbing",
+        "Typography is bold and reflects gaming aesthetics",
+        "Layout design creates excitement and engagement",
+        "Design is applied consistently across all pages"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Render generated logo and game background images as static assets in frontend/public/assets/generated",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Generated images are placed in frontend/public/assets/generated directory",
+        "Images are referenced correctly in frontend code",
+        "Logo appears in appropriate locations (header, favicon, etc.)",
+        "Background images enhance visual appeal of game interface"
+      ]
+    }
+  ],
+  "constraints": [
+    "Use Motoko for all backend logic in a single main actor",
+    "Use React with TypeScript, Tailwind CSS, and React Query for frontend",
+    "Do not modify immutable paths: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui",
+    "No external payment gateways or real money transactions - simulate in-app currency system only",
+    "No real-time WebSocket features"
+  ],
+  "nonGoals": [
+    "Integration with external payment processors or banking systems",
+    "Multi-player real-time gameplay",
+    "Social media integration or sharing features",
+    "Mobile app versions (React Native)",
+    "Complex 3D graphics (keep games simple and 2D)",
+    "Real cryptocurrency or blockchain integration",
+    "SMS notifications or email services",
+    "Third-party authentication beyond Internet Identity"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Bold, energetic logo for Humbo Bumbo gaming platform with playful typography and vibrant colors (humbo-bumbo-logo.dim_256x256.png)",
+      "Exciting game background with dynamic patterns and bright colors suggesting competition and winning (game-background.dim_1920x1080.png)"
+    ],
+    "edits": []
+  }
+}

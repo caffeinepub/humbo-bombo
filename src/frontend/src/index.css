@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Orbitron:wght@700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        /* Vibrant gaming colors - light mode */
+        --background: 0.98 0.01 280;
+        --foreground: 0.15 0.02 280;
+        --card: 1 0 0;
+        --card-foreground: 0.15 0.02 280;
+        --popover: 1 0 0;
+        --popover-foreground: 0.15 0.02 280;
+        --primary: 0.55 0.25 280; /* Electric purple */
+        --primary-foreground: 1 0 0;
+        --secondary: 0.65 0.22 180; /* Neon cyan */
+        --secondary-foreground: 0.15 0.02 280;
+        --muted: 0.95 0.01 280;
+        --muted-foreground: 0.50 0.02 280;
+        --accent: 0.70 0.24 140; /* Bright green */
+        --accent-foreground: 0.15 0.02 280;
+        --destructive: 0.60 0.25 25; /* Vibrant red */
+        --destructive-foreground: 1 0 0;
+        --border: 0.90 0.02 280;
+        --input: 0.90 0.02 280;
+        --ring: 0.55 0.25 280;
+        --success: 0.70 0.24 140;
+        --success-foreground: 0.15 0.02 280;
+        --warning: 0.75 0.20 60; /* Bright orange */
+        --warning-foreground: 0.15 0.02 280;
+        --chart-1: 0.55 0.25 280;
+        --chart-2: 0.65 0.22 180;
+        --chart-3: 0.70 0.24 140;
+        --chart-4: 0.75 0.20 60;
+        --chart-5: 0.60 0.25 25;
+    }
+
+    .dark {
+        --background: 0.12 0.03 280;
+        --foreground: 0.98 0.01 280;
+        --card: 0.18 0.03 280;
+        --card-foreground: 0.98 0.01 280;
+        --popover: 0.15 0.03 280;
+        --popover-foreground: 0.98 0.01 280;
+        --primary: 0.65 0.28 280; /* Brighter electric purple */
+        --primary-foreground: 0.98 0.01 280;
+        --secondary: 0.70 0.25 180; /* Brighter neon cyan */
+        --secondary-foreground: 0.98 0.01 280;
+        --muted: 0.25 0.03 280;
+        --muted-foreground: 0.65 0.02 280;
+        --accent: 0.75 0.26 140; /* Brighter green */
+        --accent-foreground: 0.98 0.01 280;
+        --destructive: 0.65 0.28 25; /* Brighter red */
+        --destructive-foreground: 0.98 0.01 280;
+        --border: 0.30 0.03 280;
+        --input: 0.30 0.03 280;
+        --ring: 0.65 0.28 280;
+        --success: 0.75 0.26 140;
+        --success-foreground: 0.98 0.01 280;
+        --warning: 0.80 0.22 60;
+        --warning-foreground: 0.98 0.01 280;
+        --chart-1: 0.65 0.28 280;
+        --chart-2: 0.70 0.25 180;
+        --chart-3: 0.75 0.26 140;
+        --chart-4: 0.80 0.22 60;
+        --chart-5: 0.65 0.28 25;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 800;
+    }
+}
+
+@layer utilities {
+    .text-gradient {
+        @apply bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent;
+    }
+    
+    .glow {
+        text-shadow: 0 0 20px oklch(var(--primary) / 0.5);
+    }
+    
+    .card-glow {
+        box-shadow: 0 0 30px oklch(var(--primary) / 0.2);
+    }
+    
+    .animate-pulse-slow {
+        animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+}

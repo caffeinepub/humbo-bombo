@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Gaming app where users can play games by placing bets and win money",
+  "architectural_notes": [
+    "Real money gaming platform requiring payment integration",
+    "Must comply with gambling/gaming regulations",
+    "Secure wallet/balance management system needed"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Bold, energetic logo for Humbo Bumbo gaming platform with playful typography and vibrant colors (humbo-bumbo-logo.dim_256x256.png)\n- Exciting game background with dynamic patterns and bright colors suggesting competition and winning (game-background.dim_1920x1080.png)",
+  "existing_features": [
+    {
+      "id": "feature-implement-a-game-selection-interface-showing-available-games-with-entry-fees-and-potential-winnings",
+      "title": "Implement a game selection interface showing available games with entry fees and potential winnings",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-betting-system-where-users-can-place-bets-from-their-wallet-balance-before-starting-a-game",
+      "title": "Build a betting system where users can place bets from their wallet balance before starting a game",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-at-least-one-playable-game-mechanic-with-win-lose-conditions",
+      "title": "Create at least one playable game mechanic with win/lose conditions",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-win-loss-resolution-that-credits-winnings-to-user-wallet-on-victory-or-records-loss",
+      "title": "Implement win/loss resolution that credits winnings to user wallet on victory or records loss",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-game-history-view-showing-past-games-played-with-bet-amounts-outcomes-and-winnings",
+      "title": "Build a game history view showing past games played with bet amounts, outcomes, and winnings",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-a-vibrant-exciting-gaming-interface-with-a-creative-visual-theme-featuring-energetic-colors-bold-typography-and-engaging-layouts-that-evoke-the-thrill-of-competitive-gaming-and-winning",
+      "title": "Design a vibrant, exciting gaming interface with a creative visual theme featuring energetic colors, bold typography, and engaging layouts that evoke the thrill of competitive gaming and winning",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-generated-logo-and-game-background-images-as-static-assets-in-frontend-public-assets-generated",
+      "title": "Render generated logo and game background images as static assets in frontend/public/assets/generated",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Gaming platform with real money betting and winnings",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Create a user wallet system that tracks user balance in the backend with deposit and withdrawal functionality",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Humbo Bombo",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

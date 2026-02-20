@@ -1,0 +1,15 @@
+{
+  "frontend/src/index.css": "Global styles with vibrant gaming color system using OKLCH colors, custom fonts (Poppins and Orbitron), and gaming-specific utilities like text gradients and glow effects for both light and dark modes.",
+  "frontend/tailwind.config.js": "Extended Tailwind configuration with custom gaming fonts, vibrant color tokens, increased border radius options, glow shadows, and custom animations for the Humbo Bumbo gaming platform.",
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup, defining all routes (home, games, gameplay, history, wallet) wrapped in a Layout component with proper routing structure.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for all backend operations including wallet management (balance, deposit, withdraw), betting system (place bet, resolve bet), and game history retrieval with proper cache invalidation.",
+  "frontend/src/components/Layout.tsx": "Main layout component with sticky header featuring logo, navigation, wallet balance display, login/logout functionality, mobile menu, and footer with attribution link.",
+  "frontend/src/pages/HomePage.tsx": "Landing page with hero section, feature cards highlighting platform benefits, and call-to-action sections encouraging users to login and start playing games.",
+  "frontend/src/pages/GameSelection.tsx": "Game selection page displaying available games in a grid with game cards showing entry fees, multipliers, and play buttons using useNavigate for type-safe dynamic routing, with balance checking and login prompts.",
+  "frontend/src/pages/GamePlay.tsx": "Interactive gameplay page with three states (betting, playing, result), implementing a number guessing game with bet placement, number selection, and win/loss resolution using the game background image.",
+  "frontend/src/pages/GameHistory.tsx": "Game history page displaying statistics cards (total games, wins, losses, net profit) and a scrollable list of past games with bet amounts and outcomes color-coded by win/loss.",
+  "frontend/src/pages/WalletPage.tsx": "Wallet management page with balance display, deposit and withdrawal forms, quick amount buttons, error handling, and automatic wallet creation on first use.",
+  "frontend/src/components/BetPlacement.tsx": "Reusable bet placement component with amount input, validation, quick bet buttons, and balance checking before allowing bet confirmation.",
+  "frontend/src/components/GameResult.tsx": "Game result display component showing win/loss outcome with animations, selected and lucky numbers, winnings/losses amount, and options to play again or return to game selection.",
+  "frontend/index.html": "HTML entry point with favicon, title, and meta description for the Humbo Bumbo gaming platform."
+}
